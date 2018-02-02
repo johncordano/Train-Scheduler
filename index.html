@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Train Scheduler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="row">
+            <div class="page-header">
+                <h1>Any Time is Train Time</h1>
+                <p> Choo Choo.
+            </div>
+        </div>
+        <div class="row" id="row">
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Current Train Schedule</div>
+                <!-- Table -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency (min)</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>train name data1</td>
+                            <td>destination data1</td>
+                            <td>frequency data1</td>
+                            <td>next arrival data1</td>
+                            <td>minutes away data1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>train name data2</td>
+                            <td>destination data2</td>
+                            <td>frequency data2</td>
+                            <td>next arrival data2</td>
+                            <td>minutes away data2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>train name data3</td>
+                            <td>destination data3</td>
+                            <td>frequency data3</td>
+                            <td>next arrival data3</td>
+                            <td>minutes away data3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row" id="row">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Add Train</h3>
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="train-name-input">Train Name</label>
+                            <input type="text" class="form-control" id="train-name-input" aria-describedby="" placeholder="">
+                          
+                        </div>
+                        <div class="form-group">
+                            <label for="destination-input">Destination</label>
+                            <input type="text" class="form-control" id="destination-input" placeholder="">
+                        </div>
+						<div class="form-group">
+                            <label for="first-train-input">First Train Time (HH:mm - military time)</label>
+                            <input type="date" class="form-control" id="first-train-input" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="frequency-input">Frequency (min)</label>
+                            <input type="number" class="form-control" id="frequency-input" placeholder="">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>

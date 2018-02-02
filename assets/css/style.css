@@ -1,0 +1,10 @@
+.page-header {
+	background-color: brown;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.panel-heading {
+	background-color: #0066ff;
+}
