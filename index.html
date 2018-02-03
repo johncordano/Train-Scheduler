@@ -27,7 +27,6 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>#</th>
                             <th>Train Name</th>
                             <th>Destination</th>
                             <th>Frequency (min)</th>
@@ -35,30 +34,13 @@
                             <th>Minutes Away</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>train name data1</td>
-                            <td>destination data1</td>
-                            <td>frequency data1</td>
-                            <td>next arrival data1</td>
-                            <td>minutes away data1</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>train name data2</td>
-                            <td>destination data2</td>
-                            <td>frequency data2</td>
-                            <td>next arrival data2</td>
-                            <td>minutes away data2</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>train name data3</td>
-                            <td>destination data3</td>
-                            <td>frequency data3</td>
-                            <td>next arrival data3</td>
-                            <td>minutes away data3</td>
+                    <tbody id="schedule-body">
+                        <tr id="schedule-line">
+                            <td id="train-name"></td>
+                            <td id="destination"></td>
+                            <td id="frequency"></td>
+                            <td id="next-arrival"></td>
+                            <td id="minutes-away"></td>
                         </tr>
                     </tbody>
                 </table>
