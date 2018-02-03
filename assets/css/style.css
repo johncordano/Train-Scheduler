@@ -5,6 +5,7 @@
 	padding-top: 20px;
 }
 
-.panel-heading {
-	background-color: #0066ff;
+.panel-default > .panel-heading {
+  background-color: #0000ff;
+  color: white;
 }
