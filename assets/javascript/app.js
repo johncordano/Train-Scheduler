@@ -43,7 +43,7 @@
       // Calculate the minutes away variable and the next arrival variable when the first train time is earlier than the current time
       if (firstTrainTime <= now) {
           var minutesAway = parseInt((frequency - ((now - firstTrainTime) % frequency)) / 60000);
-          var nextArrival = moment(now + (minutesAway * 60000)).format('h:mm A');
+          var nextArrival = moment((now + (minutesAway * 60000)) + 60000).format('h:mm A');
           // Calculate the minutes away variable and the next arrival variable when the first train time is later than the current time.
       } else {
           var minutesAway = parseInt((firstTrainTime - now) / 60000);
@@ -71,6 +71,9 @@
           dateAdded: firebase.database.ServerValue.TIMESTAMP
       });
 
+      // Clear user input form after Submit button click
+      document.getElementById("form-input").reset();
+
   });
 
   // Use the childSnapshot function to insert database content into html page.
@@ -78,10 +81,9 @@
 
       $("#schedule-body").append("<tr id='schedule-line'><td id='train-name'> " + childSnapshot.val().trainName + "</td><td id='destination'> " + childSnapshot.val().destination + "</td><td id='frequency'> " + childSnapshot.val().frequency + "</td><td id='next-arrival'> " + childSnapshot.val().nextArrival + "</td><td id='minutes-away'> " + childSnapshot.val().minutesAway + "</td></tr>");
 
-      // Handle the errors
+  // Handle the errors
   }, function(errorObject) {
       console.log("Errors handled: " + errorObject.code);
-
   });
 
   // Get snapshot content from the database.
