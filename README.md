@@ -8,6 +8,8 @@ The application provides information about a train schedule. In the input form o
 
 The table on the top part of the screen displays the user-entered data and calculated data for the next train arrival and the number of minutes until that train arrives. All information in this table is automatically updated when the user clicks the Submit button or when the application page is initially displayed.
 
+![](assets/images/TrainScheduler.png)
+
 
 
 Tools Used
