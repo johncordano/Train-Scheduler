@@ -10,7 +10,7 @@ The table on the top part of the screen displays the user-entered data and calcu
 
 The following image shows the application:
 
-![train image](assets/images/TrainScheduler.png)
+![train image](assets/images/train-scheduler.png)
 
 
 #Tools Used
