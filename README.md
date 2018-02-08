@@ -1,4 +1,4 @@
-# Train-Scheduler
+# Train Scheduler
 
 The application provides information about a train schedule. In the input form on the bottom part of the screen, the user enters the following information, and then clicks the Submit button:
 - the train name.
